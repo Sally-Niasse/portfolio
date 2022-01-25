@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="popup.js" defer></script>
+    <script type="text/javascript" src="slider.js" defer></script>
+    <!-- Style file-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="background">
+            <div class="fond1"></div>
+            <div class="fond2"></div>
+            <div class="fond3"></div>
+            <div class="fond4"></div>
+            <div class="fond5"></div>
+        </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#about">
+                        <li>Qui suis-je ?</li>
+                    </a>
+                    <a href="#skill">
+                        <li>Compétences</li>
+                    </a>
+                    <a href="#projects">
+                        <li>Projets</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Dessins</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        </nav>
+        <div class="sally">
+            <h1>Sally Niasse</h1>
+            <div class="interligne">
+                <div class="carre"></div>
+                <div class="line"></div>
+                <div class="carre"></div>
+            </div>
+            <h3>Polyvalence, mon atout !</h3>
+        </div>
+    </header>
+    <div class="title" id="about">
+        <h2>Qui suis-je ?</h2>
+        <div class="interligne">
+            <div class="carre"></div>
+            <div class="line"></div>
+
+        </div>
+
+    </div>
+    <div class="about">
+        <p>Bienvenue sur mon portfolio, je suis Sally Niasse, étudiante en deuxième année de DUT MMI. Ravie de vous voir
+            sur ma page ! J’ai pour ambition de travailler dans des domaines qui pourraient m’apporter une satisfaction
+            artistique. J’ai toujours été attiré par le dessin et le graphisme c’est pourquoi j’espère travailler dans
+            le domaine du web en tant que webdesigner / front-end développeur ou bien dans les arts graphiques tels que le concept
+            art ou le game design. Je suis quelqu’un de simple, organisée, sérieuse et serviable mais j’espère avoir
+            l’occasion de vous montrer cela en temps réel ;)</p>
+    </div>
+
+    <div class="skill" id="skill">
+        <h2>Compétences</h2>
+        <div class="interligne">
+            <div class="line"></div>
+            <div class="carre"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 100 100">
+            <g class="html">
+                <circle cx="60" cy="20" r="15.9155" class="progress-bar__background" />
+                <circle cx="60" cy="20" r="15.9155" class="progress-bar__progress js-progress-bar" />
+                <text transform="translate(58,14) rotate(90)" font-size="5" fill="#EFF6E0"> HTML</text>
+            </g>
+
+            <g class="css">
+                <circle cx="50" cy="60" r="15.9155" class="progress-bar__background" />
+                <circle cx="50" cy="60" r="15.9155" class="progress-bar__progress js-progress-bar" />
+                <text transform="translate(49,55) rotate(90)" font-size="5" fill="#EFF6E0"> CSS</text>
+            </g>
+            <g class="abode">
+                <circle cx="20" cy="20" r="15.9155" class="progress-bar__background" />
+                <circle cx="20" cy="20" r="15.9155" class="progress-bar__progress js-progress-bar" />
+                <text transform="translate(9,48) rotate(90)" font-size="5" fill="#EFF6E0"> Suite Abobe</text>
+            </g>
+            <g class="php">
+                <circle cx="10" cy="60" r="15.9155" class="progress-bar__background" />
+                <circle cx="10" cy="60" r="15.9155" class="progress-bar__progress js-progress-bar" />
+                <text transform="translate(18,15) rotate(90)" font-size="5" fill="#EFF6E0">
+                    PHP</text>
+            </g>
+
+        </svg>
+    </div>
+
+    <div class="title">
+        <h2>Projets</h2>
+        <div class="interligne">
+            <div class="carre"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <div class="container">
+            <div class="size">
+                <img src="project/cv.png" alt=""><br>
+                <button id="btn-cv">Voir plus</button>
+            </div>
+            <div class="size"><img src="project/motion.png" alt=""><br>
+                <button id="btn-motion">Voir plus</button>
+            </div>
+            <div class="size"><img src="project/hexa.png" alt=""><br>
+                <button id="btn-hexa">Voir plus</button>
+            </div>
+
+            <div class="size"><img src="project/mpg.png" alt=""><br>
+                <button id="btn-mpg" class="open-button">Voir plus</button>
+            </div>
+            <div class="size"><img src="project/cercleformation.png" alt=""><br>
+                <button id="btn-formation" class="open-button">Voir plus</button>
+            </div>
+            <div class="size"><img src="project/blog.png" alt=""><br>
+                <button id="btn-blog" class="open-button">Voir plus</button>
+            </div>
+            <div class="size"><img src="project/shootemup.png" alt=""><br>
+                <button id="btn-shoot" class="open-button">Voir plus</button>
+            </div>
+        </div>
+        <div id="cv" class="popup hide">
+            <div class="content">
+                <div class="poptitle">
+                    <h3>CV Video</h3>
+                    <button id="close-cv" class="close-button">&times;</button>
+                </div>
+                <div class="description">
+                    <video controls>
+                        <source src="video/cv_video.mp4" type="video/mp4">
+                        <p>Malheuresement votre naviagteur ne prend pas en charge mon CV video... Voici le lien juste<a
+                                href="video/cv_video.mp4">ici</a></p>
+                    </video> <br>
+                    <p><strong>Date :</strong> Novembre - Décembre 2021</p> <br>
+                    <p>Ce projet consistait à créer notre propre CV vidéo avec un concept original. Pour ma part,
+                        c’était de diviser mes différents éléments de présentation en petits micro univers que
+                        représentait chaque cube. Mon alter ego y plonge pour faire partager au spectateur son univers.
+                        J’ai réalisé toute les illustrations moi-même ainsi que le montage</p>
+                    <p><strong>Compétences :</strong>After Effect, Illustrator, dessin</p>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div id="motion" class="popup hide">
+            <div class="content">
+                <div class="poptitle">
+                    <h3>Motion Design</h3>
+                    <button id="close-motion" class="close-button">&times;</button>
+                </div>
+                <div class="description">
+                    <video controls>
+                        <source src="video/motion_design.mp4
+                        " type="video/mp4">
+                        <p>Malheuresement votre naviagteur ne prend pas en charge mon CV video... Voici le lien juste<a
+                                href="video/motion_design.mp4">ici</a></p>
+                    </video> <br>
+                    <p><strong>Date :</strong> Novembre - Décembre 2021</p>
+                    <p>Dans ce projet, nous devions créer un motion design à but assez libre et le monter et animer par
+                        le biais d’After Effect. J’ai fait le choix de faire un lyrics animé de la chanson Simple and
+                        Clean, célèbre thème du jeu vidéo Kingdom Hearts que j’affectionne tout particulièrement. J’étais
+                        donc chargé de trouver des rushes du jeu ainsi que de symboliser les grands événements de
+                        l’histoire avec des apparitions de texte le plus variés possible.</p>
+                    <p><strong>Compétences :</strong> After Effect, Premiere Pro, recherche, créativité</p>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        
+    </div>
+    <div id="hexa" class="popup hide">
+        <div class="content">
+            <div class="poptitle">
+                <h3>Hexaword</h3>
+                <button id="close-hexa" class="close-button">&times;</button>
+            </div>
+            <div class="description">
+                <p><strong>Date :</strong> Septembre - Octobre 2021</p>
+                <p>Le projet Hexaword devait mettre en scène un code hexadécimal ayant des significations en anglais,
+                    issu du site <a href="https://c0ffee.surge.sh/">c0ffee.surge</a>. Nous avions carte blanche tant que
+                    cela représentait le code en question. J’ai donc développé le site autour de l’idée du pointillisme
+                    par le biais de recherche, mais aussi de pratique avec Photoshop.</p>
+                <p><strong>Compétences :</strong> HTML, CSS, JS, Photoshop, créativité</p>
+                Voyez par vous même <a href="https://perso-etudiant.u-pem.fr/~sally.niasse/hexaword/"
+                    target="_blank">ici</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div id="mpg" class="popup hide">
+        <div class="content">
+            <div class="poptitle">
+                <h3>Multimedia Playing Game </h3>
+                <button id="close-mpg" class="close-button">&times;</button>
+            </div>
+            <div class="description">
+                <p><strong>Date :</strong> Janvier - Juin 2021</p>
+                <p>Multimédia Playing Game, ou MPG Formation de son petit nom, est le fruit de mon projet tutoré de
+                    première année de DUT. Il a pour but de renseigner, dans un premier temps, les étudiants MMI dans
+                    leur poursuite d’étude post-DUT, mais d’une façon plus ludique qui rappelle les jeux de rôles. Je me
+                    suis occupé de l’intégration du site, du développement back mais aussi du maquettage en
+                    collaboration avec le graphiste du projet.</p>
+                <p><strong>Compétences :</strong> HTML, CSS, JS, PHP, SQL, Figma</p>
+                Voyez par vous même <a href="https://perso-etudiant.u-pem.fr/~sally.niasse/mpgformation/"
+                    target="_blank">ici</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div id="formation" class="popup hide">
+        <div class="content">
+            <div class="poptitle">
+                <h3>Cercle Formation</h3>
+                <button id="close-formation" class="close-button">&times;</button>
+            </div>
+            <div class="description">
+                <p><strong>Date:</strong> Novembre 2021</p>
+                <p>Ceci est un petit projet d’entreprise de courte durée (environ une semaine) qui m’a été demandé. Dans
+                    ce projet, je devais constituer un site vitrine pour la SASU Cercle Formation, du maquettage jusqu’à
+                    l'hébergement en passant par le développement. Les contenus étant déjà faits au préalable, je
+                    n’avais qu'à les mettre en forme.</p>
+                <p><strong>Compétences :</strong> HTML, CSS, Figma, Hébergement</p> <br>
+                Voyez par vous même <a href="http://cercleformation.fr/" target="_blank">ici</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div id="blog" class="popup hide">
+        <div class="content">
+            <div class="poptitle">
+                <h3>Fates - Projet Blog</h3>
+                <button id="close-blog" class="close-button">&times;</button>
+            </div>
+            <div class="description">
+                <p><strong>Date:</strong> Novembre - Décembre 2021</p>
+                <p>Ce projet devait nous permettre de pouvoir apprendre les rudiments d’un blog classique. Nous devions
+                    créer un blog permettant seulement à l’administrateur de poster des entrées tandis que les personnes
+                    connectées pouvaient commenter ces entrées. Une personne non inscrite ne peut que consulter les
+                    derniers posts. Mon rôle a été de m’occuper de toute la partie développement back : relation
+                    interface utilisateur et base de données.</p>
+                <p><strong>Compétences :</strong> PHP, SQL, HTML</p>
+                Voyez par vous même <a href="https://perso-etudiant.u-pem.fr/~sally.niasse/blog/"
+                    target="_blank">ici</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div id="shoot" class="popup hide">
+        <div class="content">
+            <div class="poptitle">
+                <h3>Shoot'em Up</h3>
+                <button id="close-shoot" class="close-button">&times;</button>
+            </div>
+            <div class="description">
+                <p><strong>Date:</strong> Octobre - Décembre 2021</p>
+                <p>Petit jeu de type Shoot'em Up que nous devions réaliser avec des contraintes de développement. Le
+                    choix du sujet étant libre mon groupe et moi-même avons repris la série iconique Pokemon</p>
+                <p><strong>Compétences :</strong> JS (librairie D3), HTML</p><br>
+                Voyez par vous même <a href="https://perso-etudiant.u-pem.fr/~sally.niasse/shootemup/"
+                    target="_blank">ici</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    </div>
+    <div class="drawings" id="drawings">
+        <h2>Mes Dessins</h2>
+        <div class="interligne">
+            <div class="line"></div>
+            <div class="carre"></div>
+        </div>
+        <p>J’aime beaucoup dessiner, c’est pourquoi je vous laisse une petite sélection de mes dessins et croquis
+            préférés. La plupart sont faits aux crayons fins, aquarelle ou bien feutre noir.</p>
+        <div class="container-slider">
+            <button id="previous">&lang;</button>
+            <div class="slider">
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="drawings/rengoku1.jpg" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <img src="drawings/mika_kinako.1.jpg" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <img src="drawings/panda1.jpg" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <img src="drawings/distant1.jpg" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <img src="drawings/mika_doodle1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <button id="next">&rang;</button>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="interligne">
+            <div class="carre"></div>
+            <div class="line"></div>
+            <div class="carre"></div>
+        </div>
+        <p id="info-contact">Mon profil vous intéresse ? N'hésitez surtout pas à me contacter !</p>
+        <div class="container-contact">
+            <div>
+                <a href="https://www.linkedin.com/in/sally-niasse-0b38781b9/" target="_blank"><img
+                        src="icon/linkedin.png" alt=""></a>
+                <p>Mon Linkedin</p>
+            </div>
+            <div>
+                <a href="mailto:sniasse@hotmail.com"><img src="icon/mail.png" alt=""></a>
+                <p>Mon mail</p>
+            </div>
+            <div>
+                <a href="docs/cv_sally_niasse.pdf" target="_blank"><img src="icon/cv.png" alt=""></a>
+                <p>Mon CV</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menu = document.querySelector(".menu")
+
+        function deroule() {
+            console.log("clic")
+            if (menu.style.display == "none") {
+                menu.style.display = "block";
+                menu.style.transform = "translateY(35px)"
+            } else {
+                menu.style.display = "none";
+                menu.style.transform = "translateY(-40px)"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
